@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- activity_home.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    android:background="@drawable/first"
+android:padding="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NeedyFeedy"
+        android:text="NeedyFeedy"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:layout_margin="1dp" />
+
+
+    <Button
+        android:id="@+id/foodItemsButton"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:background="#40ffffff"
+        android:textSize="25sp"
+        android:text="Foods"
+        android:drawableStart="@drawable/baseline_food_bank_24"
+        android:textColor="@color/black" />
+
+    <Button
+    android:id="@+id/clothesButton"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+    android:textColor="@color/black"
+    android:background="#40ffffff"
+        android:drawableStart="@drawable/baseline_woman_24"
+    android:text="Dresses" />
+
+<Button
+    android:id="@+id/groceryButton"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#40ffffff"
+    android:layout_marginTop="50dp"
+    android:textSize="25sp"
+    android:textColor="@color/black"
+    android:drawableStart="@drawable/baseline_local_grocery_store_24"
+    android:text="Groceries" />
+
+<Button
+    android:id="@+id/stationaryButton"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="50dp"
+    android:textColor="@color/black"
+    android:background="#40ffffff"
+    android:drawableStart="@drawable/baseline_menu_book_24"
+    android:textSize="25sp"
+    android:text="Stationery" />
+
+<Button
+    android:id="@+id/pharmacyButton"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#40ffffff"
+    android:layout_marginTop="50dp"
+    android:drawableStart="@drawable/baseline_local_pharmacy_24"
+    android:textSize="25sp"
+    android:textColor="@color/black"
+    android:text="Pharmacy" />
+</LinearLayout>

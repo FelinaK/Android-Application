@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">feedyneedy</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="create">Create new account</string>
+    <string name="editTextUsername">Username</string>
+    <string name="editTextMobile">Mobile</string>
+    <string name="editTextEmail">Email</string>
+    <string name="signup">Signup</string>
+    <string name="editTextPasssword">Password</string>
+    <string name="buttonRegister">Register</string>
+    <string name="food_image_description">your description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

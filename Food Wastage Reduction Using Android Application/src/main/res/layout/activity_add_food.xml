@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".AddFoodActivity">
+
+    <ImageView
+        android:id="@+id/imageViewFood"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/black"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/baseline_image_24"
+        android:contentDescription="TODO" />
+
+    <Button
+        android:id="@+id/buttonChooseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewFood"
+        android:layout_marginTop="8dp"
+        android:background="#80f08080"
+        android:text="Choose Image"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonChooseImage"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="16dp"
+        android:hint="Food Name"
+        android:textColorHint="@color/black"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/editTextFoodName"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/black"
+        android:hint="Quantity"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextDonorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/editTextQuantity"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="10dp"
+        android:hint="Donor Name"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextDonorAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/editTextDonorName"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="10dp"
+        android:hint="Donor Address"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextDonorContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDonorAddress"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:hint="Donor Contact"
+        android:inputType="phone"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonAddFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDonorContact"
+        android:layout_marginTop="16dp"
+        android:background="#80f08080"
+        android:minHeight="48dp"
+        android:text="Add Food"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

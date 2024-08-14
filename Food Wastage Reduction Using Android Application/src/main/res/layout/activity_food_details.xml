@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_food_details.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+
+    tools:context=".FoodDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageViewFood"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/foodNameTextView"
+        android:scaleType="centerCrop" />
+
+
+    <TextView
+        android:id="@+id/foodNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/quantityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/imageViewFood"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/donorNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/quantityTextView"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/donorAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:layout_below="@id/donorNameTextView"
+        android:layout_marginTop="8dp" />
+
+    <!-- Add this Button inside your layout -->
+    <Button
+        android:id="@+id/buttonViewLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donorAddressTextView"
+        android:text="View Location"
+        android:background="#80f08080"
+        android:textColor="@color/black"
+        tools:ignore="VisualLintButtonSize"
+        android:onClick="viewLocationOnMap"/>
+
+    <Button
+        android:id="@+id/placeOrderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:layout_below="@id/buttonViewLocation"
+        android:layout_marginTop="16dp"
+        android:background="#80f08080"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        tools:ignore="VisualLintButtonSize" />
+
+</RelativeLayout>

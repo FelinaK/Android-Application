@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:color/white"
+android:padding="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/profile"
+        android:layout_centerHorizontal="true"
+        android:drawableTop="@drawable/baseline_person_black"/>
+
+
+<TextView
+    android:id="@+id/displayNameTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Welcome, User"
+    android:textSize="18sp" />
+
+
+    <Button
+        android:layout_marginTop="1dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile"
+        android:id="@+id/mydonation"
+        android:text="My Donation"
+        android:layout_centerHorizontal="true"
+        android:background="#80f08080"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="250dp"
+        android:layout_below="@+id/mydonation"
+        android:layout_height="wrap_content"
+        android:id="@+id/myorder"
+        android:text="My Orders"
+        android:layout_centerHorizontal="true"
+        android:background="#80f08080"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="250dp"
+        android:layout_below="@+id/myorder"
+        android:layout_height="wrap_content"
+        android:id="@+id/mydeliver"
+        android:text="My Deliver"
+        android:layout_centerHorizontal="true"
+        android:background="#80f08080"
+        android:textColor="@color/black"/>
+
+
+<Button
+    android:id="@+id/signOutButton"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/mydeliver"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:textColor="@color/black"
+    android:background="#80f08080"
+    android:text="Sign Out" />
+
+</RelativeLayout>
